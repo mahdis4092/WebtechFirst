@@ -105,6 +105,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
+  <form name="registerForm" action="" onsubmit="return validateForm()" method="post">
     <div class="wrapper">
         <h2>Sign Up</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -130,5 +131,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </form>
     </div>
+    <script type="text/javascript">
+     function validateForm() {
+     var username = document.forms["registerForm"]["username"].value;
+     var password = document.forms["registerForm"]["password"].value;
+     var confirm_password = document.forms["registerForm"]["confirm_password"].value;
+
+     if (username== null || username == "") {
+         alert("username must be filled out");
+         return false;
+     } else if (password == null ||password == "") {
+         alert("password must be filled out");
+         return false;
+     } else if (confirm_password == null ||confirm_password == "") {
+         alert("confirm_password must be filled out");
+         return false
+     }
+ }
+   </script>
 </body>
 </html>
