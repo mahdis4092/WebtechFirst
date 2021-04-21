@@ -44,7 +44,7 @@ body {
 
 /* Style the header */
 header {
-  background-color: #666;
+  background-color: #4863A0;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -55,7 +55,7 @@ header {
 nav {
   float: left;
   width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 500px; /* only for demonstration, should be removed */
   background: #ccc;
   padding: 20px;
 }
@@ -83,7 +83,7 @@ section::after {
 
 /* Style the footer */
 footer {
-  background-color: #777;
+  background-color: #4863A0;
   padding: 10px;
   text-align: center;
   color: white;
@@ -111,7 +111,11 @@ footer {
     <ul>
       <li><a href="viewprofile.php"class="btn btn-primary">View profile</a></li>
       <br></br>
-      <li><a href="editprofile.php"class="btn btn-primary">Edit profile</a></li>
+      <li><a href="controller\index.php"class="btn btn-primary">Edit profile</a></li>
+      <br></br>
+      <li><a href="doctor.php"class="btn btn-primary">Doctor profile</a></li>
+      <br></br>
+      <li><a href="patient.php"class="btn btn-primary">patient profile</a></li>
       <br></br>
       <li><a href="information.php"class="btn btn-primary">Information</a></li>
     </ul>
